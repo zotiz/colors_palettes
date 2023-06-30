@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Pirata+One&family=Roboto:wght@300;400;500&display=swap');
+
+body{font-family: 'Source Code Pro', sans-serif;background:#222; padding:2%; color:#eee;
+  background-color: #15111a;
+  background-image: url("https://www.transparenttextures.com/patterns/white-wall-3.png");}
+*, *:after, *:before {  
+  -webkit-box-sizing: border-box;  
+  -moz-box-sizing: border-box;  
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.animated_rainbow_1 {
+
+	font-family: 'Dorsa' ;
+  font-family: 'Pirata One', sans-serif,cursive;
+  font-weight:100;
+  letter-spacing:1px;
+  font-size:100px;
+  text-align:center;
+  margin:35px 0px;
+	background-image: -webkit-linear-gradient(left, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d5ff, #0af, #0080ff, #05f, #002aff, #00f, #2b00ff, #50f, #8000ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
+	
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: #0000;
+	background-clip: text;
+}
+
+@keyframes animatedBackground_a {
+	0% { background-position: 0 0 }
+	100% { background-position: -500px 0 }
+}
+
+.welcome-note{
+  width:70%;
+  margin:50px auto;
+  text-align: center;
+}
+h1 {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 22px;
+
+    margin-top: 0px;
+   color: #ffffffd4;
+    font-family: sans-serif;
+  
+  }
+
+
+.welcome-note p{
+  font-size:24px;
+}
+main{
+  width: 100%;
+  height: auto;
+  display:flex;
+  flex-direction: row;
+}
+.main-sub{
+  width: 33.33%;
+
+
+
+}
+ul {
+  width: 100%;
+  list-style-type: none;
+  margin: 0 1% 1.5%;
+  padding:15px 15px 7px 15px;
+
+
+
+}
+#drop{
+  height: 34px;
+  width: 34px;
+  margin: 0 auto;
+}
+p{
+  text-align: center;
+  margin:0px 0px 2.2em;
+  font-size: 12px;
+  color: #999;
+  line-height: 30px;
+}
+a{color:#28D9E8;text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+li {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+input {
+  font-family: 'Arial', sans-serif;
+  display: block;
+  width: 100%;
+  border: 0;
+  height: 100px;
+  outline:0px;
+  text-align: center;
+  color:#fff;
+  font-size:18px;
+  border-radius:0px;
+  cursor:pointer;
+  position: relative;
+  top:0px;
+}
+input:hover{
+  position: relative;
+  top:-5px;
+}
+span{
+  clear:both;
+  color:#888;
+  font-size:12px;
+  padding-top:5px;
+  display:block;
+}
+span a{
+  font-size:10px;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin:70px 0 40px;
+  font-family: serif,sans-serif;
+  padding:0 12px 0;
+}
+.social{
+  width: 30%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
+}
+.social a {
+  color:rgb(255, 255, 255);
+  font-size:20px;
+  width:50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: rgb(17, 17, 17);
+  border-radius: 50%;
+}
+.social a:hover{
+  font-size:24px;
+}
+.copyright{
+  font-size:18px;
+  line-height: 50px;
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  .animated_rainbow_1 {
+    font-size: 60px;
+  }
+  .welcome-note{
+    margin:30px auto;
+
+  }
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 18px;
+    font-size:28px
+  }
+  .welcome-note p{
+    font-size:18px;
+  }
+  main{
+    flex-direction: column;
+  }
+  .main-sub{
+    width: 100%;
+  }
+ ul{
+  display: block;
+ }
+ footer{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:30px;
+ }
+ .copyright{
+  font-size:16px;
+  line-height: 20px;
+}
+}
+@media only screen and (max-width: 300px){
+  .animated_rainbow_1 {
+    font-size: 40px;
+  }
+  h1{
+    font-size: 22px;
+  }
+  .welcome-note p{
+    font-size:16px;
+  }
+  .social{
+    width: 30%;
+    min-width: 200px;
+    
+  }
+  .social a {
+  
+    font-size:14px;
+    width:35px;
+    height: 35px;
+    line-height: 35px;
+   
+}
+.copyright{
+  font-size:14px;
+  line-height: 20px;
+}}
